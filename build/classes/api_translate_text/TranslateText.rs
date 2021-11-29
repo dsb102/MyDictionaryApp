@@ -1,0 +1,2 @@
+api_translate_text.Main
+api_translate_text.TranslateText
