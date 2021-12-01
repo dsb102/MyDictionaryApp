@@ -17,7 +17,6 @@ public class APIResponse {
 
     public APIResponse() {
     }
-  
     
     public APIResponse(String word, String phonetic, String origin, List<Phonetics> phonetics, List<Meanings> meanings) {
         this.word = word;
@@ -27,45 +26,11 @@ public class APIResponse {
         this.meanings = meanings;
     }
 
-    public String getPhonetic() {
-        return phonetic;
-    }
-
-    public void setPhonetic(String phonetic) {
-        this.phonetic = phonetic;
-    }
-
-    public String getOrigin() {
-        return origin;
-    }
-
-    public void setOrigin(String origin) {
-        this.origin = origin;
-    }
-
-    public String getWord() {
-        return word;
-    }
-
-    public void setWord(String word) {
-        this.word = word;
-    }
-
-    public List<Phonetics> getPhonetics() {
-        return phonetics;
-    }
-
-    public void setPhonetics(List<Phonetics> phonetics) {
-        this.phonetics = phonetics;
-    }
-
-    public List<Meanings> getMeanings() {
-        return meanings;
-    }
-
-    public void setMeanings(List<Meanings> meanings) {
-        this.meanings = meanings;
-    }
+    public void setPhonetic(String phonetic) {this.phonetic = phonetic;}
+    public void setOrigin(String origin) {this.origin = origin;}
+    public void setWord(String word) {this.word = word;}
+    public void setPhonetics(List<Phonetics> phonetics) {this.phonetics = phonetics;}
+    public void setMeanings(List<Meanings> meanings) {this.meanings = meanings;}
     
     private String formatMeanings() {
         String m = "";

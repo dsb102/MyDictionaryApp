@@ -16,32 +16,34 @@ Tư tưởng:
     nếu số lỗi <= 30% thì đạt, không thì không đạt
     Link tham khảo: https://tailieu.vn/doc/thuat-toan-tim-kiem-string-gan-dung-nhu-google-384546.html
 
-*/
-
+ */
 public class ApproximateWord {
+
     private String s;
     private int saiso;
+
     public ApproximateWord(String nhap) {
         s = nhap.trim();
         saiso = (int) Math.round(s.length() * 0.3);
     }
 
     public boolean compareTo(String s1) {
-        if (s1.length() < (s.length() - saiso)|| s1.length() > (s.length()+saiso)) {// nếu s1 có độ dài nhỏ hơn độ dài của s - sai số hoặc là s1 có độ dài lớn hơn s + sai số thì return false
+        if (s1.length() < (s.length() - saiso) || s1.length() > (s.length() + saiso)) {// nếu s1 có độ dài nhỏ hơn độ dài của s - sai số hoặc là s1 có độ dài lớn hơn s + sai số thì return false
             return false;
         }
-        int i =0;
-        int j =0;
-        int loi =0;
-        while(i<s.length() && j < s1.length()) { // cho vòng lặp chạy từ i đến hết s và j đến hết s1
+        int i = 0;
+        int j = 0;
+        int loi = 0;
+        while (i < s.length() && j < s1.length()) { // cho vòng lặp chạy từ i đến hết s và j đến hết s1
             if (s.charAt(i) != s1.charAt(j)) { // nếu s(i) != s1(j) thì lỗi + 1
                 loi++;
-                for(int k = 1; k <= saiso; k++) {
-                    if((i+k <s.length()) && s1.charAt(j) == s.charAt(i + k)) {
-                        i+= k;
+                for (int k = 1; k <= saiso; k++) {
+                    if ((i + k < s.length()) && s1.charAt(j) == s.charAt(i + k)) {
+                        i += k;
                         break;
-                    } if ((j+k <s1.length()) && s.charAt(i) == s1.charAt(j+k)) {
-                        j+=k;
+                    }
+                    if ((j + k < s1.length()) && s.charAt(i) == s1.charAt(j + k)) {
+                        j += k;
                         break;
                     }
                 }
@@ -49,8 +51,8 @@ public class ApproximateWord {
             i++;
             j++;
         }
-        loi +=s.length() - i + s1.length() - j;
-        if(loi <= saiso) {
+        loi += s.length() - i + s1.length() - j;
+        if (loi <= saiso) {
             return true;
         } else {
             return false;

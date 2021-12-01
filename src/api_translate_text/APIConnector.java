@@ -13,20 +13,17 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Scanner;
 
-
 public class APIConnector {
 
     private final String urlString;
-
 
     public APIConnector(String urlString) throws MalformedURLException {
         this.urlString = urlString;
     }
 
-    public JSONArray getJSONArray(String query){
+    public JSONArray getJSONArray(String query) {
         try {
             URL url = new URL(urlString + query);
-
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
             conn.setRequestMethod("GET");
             conn.connect();
@@ -46,29 +43,28 @@ public class APIConnector {
                 scanner.close();
 
                 JSONParser parse = new JSONParser();
-
                 return (JSONArray) parse.parse(String.valueOf(informationString));
             }
-        }catch (Exception e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
         return null;
     }
 
-    public JSONObject getJSONObject(String query){
+    public JSONObject getJSONObject(String query) {
         try {
             URL url = new URL(urlString + query);
 
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
             conn.setRequestMethod("GET");
-            
+
             conn.connect();
             int responseCode = conn.getResponseCode();
 
             if (responseCode != 200) {
                 throw new RuntimeException("HttpResponseCode: " + responseCode);
             } else {
-
+                
                 StringBuilder informationString = new StringBuilder();
                 Scanner scanner = new Scanner(url.openStream());
 
@@ -78,13 +74,11 @@ public class APIConnector {
                 scanner.close();
 
                 JSONParser parse = new JSONParser();
-
                 return (JSONObject) parse.parse(String.valueOf(informationString));
             }
-        }catch (Exception e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
         return null;
     }
 }
-

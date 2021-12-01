@@ -26,15 +26,14 @@ class JSONHandle {
                 if (json.has("word")) {
                     word = json.getString("word");
                 }
-                // get Phonetic
                 String phonetic = "";
                 if (json.has("phonetic")) {
                     phonetic = json.getString("phonetic");
                 }
-                // set Word and Phonetic
                 apiRepsponse.setWord(word);
+
                 apiRepsponse.setPhonetic(phonetic);
-                // get Phonetics
+
                 if (json.has("phonetics")) {
                     JSONArray arrPhonetics = json.getJSONArray("phonetics");
                     for (Object arrPhonetic : arrPhonetics) {
@@ -47,22 +46,20 @@ class JSONHandle {
                         if (((JSONObject) arrPhonetic).has("audio")) {
                             audio = ((JSONObject) arrPhonetic).getString("audio");
                         }
+
                         phonetics.add(new Phonetics(text, audio));
                     }
                 }
-                // set Phonetics
                 apiRepsponse.setPhonetics(phonetics);
                 String origin = "";
-                // get origin
                 if (json.has("origin")) {
                     origin = json.getString("origin");
                 }
-                // set origin
                 apiRepsponse.setOrigin(origin);
-                // get info meanings
                 if (json.has("meanings")) {
 
                     JSONArray arrMeanings = json.getJSONArray("meanings");
+
                     for (Object arrMeaning : arrMeanings) {
                         JSONObject objMeanings = (JSONObject) arrMeaning;
                         String partOfSpeech = "";

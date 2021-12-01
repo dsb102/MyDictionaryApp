@@ -13,29 +13,18 @@ import java.util.*;
 public class Dictionary {
     public Map<String, String> Dic = new HashMap<>();
 
-    public Dictionary() {
-    }
-    // thêm từ
-    public void addWord(String word, String means) {
-        Dic.put(word, means);
-    }
-    // tìm từ
-    public String searchWord(String word) {
-        return Dic.get(word);
-    }
+    public Dictionary() {}
     
-    public boolean containWord(String word) {
-        return Dic.containsKey(word.toLowerCase());
-    }
+    public void addWord(String word, String means) {Dic.put(word, means);}
     
-    //sửa từ
-    public void modifyWord(String word, String means) {
-        Dic.replace(word, means);
-    }
-    // xóa từ
-    public void deleteWord(String word) {
-        Dic.remove(word);
-    }
+    public String searchWord(String word) {return Dic.get(word);}
+    
+    public boolean containWord(String word) {return Dic.containsKey(word.toLowerCase());}
+    
+    public void modifyWord(String word, String means) {Dic.replace(word, means);}
+    
+    public void deleteWord(String word) {Dic.remove(word);}
+    
     public void loadWordFromFile() throws FileNotFoundException {
         Scanner in = new Scanner(new File("vietanhtest.txt"));
         String tmp = in.nextLine();

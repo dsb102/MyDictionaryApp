@@ -1,11 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package dictionary_organization;
 
-import java.util.StringTokenizer;
 
 /**
  *
@@ -16,8 +10,7 @@ public class EntityWord {
     private String phonetic;
     private String means;
 
-    public EntityWord() {
-    }
+    public EntityWord() {}
 
     public EntityWord(String word, String phonetic, String means) {
         this.word = word;
@@ -28,15 +21,17 @@ public class EntityWord {
     public String getWord() {
         return word;
     }
-
     public String getPhonetic() {
         return phonetic;
     }
-
     public String getMeans() {
         return means;
     }
 
+    private boolean isDelimiter(char c) {
+        return c == '*' || c == '-' || c == '=' || c == '\n' || c == '+' || c == '!';
+    }
+    
     @Override
     public String toString() {
         String str = "\tWord: " + word + "\n\tPhonetic: " + phonetic;
@@ -50,12 +45,4 @@ public class EntityWord {
         }
         return str;
     }
-    private boolean isDelimiter(char c) {
-        return c == '*' || c == '-' || c == '=' || c == '\n' || c == '+' || c == '!';
-    }
-    
-    
-    
-    
-    
 }
