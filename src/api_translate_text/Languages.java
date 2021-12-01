@@ -1,9 +1,6 @@
 package api_translate_text;
 
-/**
- *
- * @author Dũng Sobin
- */
+
 public enum Languages {
     Language(""),
     Afrikaans("af"),

@@ -3,10 +3,7 @@ package handle.filejson;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- *
- * @author Dũng Sobin
- */
+
 public class Meanings {
     private String partOfSpeech = "";
     private List<Definitions> definitions = new ArrayList<>();

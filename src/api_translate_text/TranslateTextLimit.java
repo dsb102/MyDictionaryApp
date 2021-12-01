@@ -7,19 +7,13 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-/**
- *
- * @author Dũng Sobin
- */
+
 public class TranslateTextLimit {
     // TODO: If you have your own Premium account credentials, put them down here:
   private static final String CLIENT_ID = "FREE_TRIAL_ACCOUNT";
   private static final String CLIENT_SECRET = "PUBLIC_SECRET";
   private static final String ENDPOINT = "http://api.whatsmate.net/v1/translation/translate";
 
-  /**
-   * Entry Point
-   */
   public static void main(String[] args) throws Exception {
     // TODO: Specify your translation requirements here:
     String fromLang = "en";

@@ -3,10 +3,6 @@ import dictionary_organization.EntityWord;
 import java.sql.*;
 import java.util.*;
 
-/**
- *
- * @author Dũng Sobin
- */
 public class ConnectToSQL {
     private Connection connectDb() throws ClassNotFoundException, SQLException {
         Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");

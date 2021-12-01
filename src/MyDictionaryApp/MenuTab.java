@@ -23,10 +23,7 @@ import texttospeech.TextToSpeech;
 import dictionaryVA.Dictionary;
 import java.io.FileNotFoundException;
 
-/**
- *
- * @author Dũng Sobin
- */
+
 public class MenuTab extends javax.swing.JFrame {
 
     ConnectToSQL con = new ConnectToSQL();

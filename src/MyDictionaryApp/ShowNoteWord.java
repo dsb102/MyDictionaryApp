@@ -1,9 +1,6 @@
 package MyDictionaryApp;
 
-/**
- *
- * @author Dũng Sobin
- */
+
 import dictionary_organization.EntityWord;
 import java.awt.Dimension;
 import java.awt.Toolkit;

@@ -1,9 +1,6 @@
 package handle.filejson;
 
-/**
- *
- * @author Dũng Sobin
- */
+
 public class Phonetics {
     private String text = "";
     private String audio = "";

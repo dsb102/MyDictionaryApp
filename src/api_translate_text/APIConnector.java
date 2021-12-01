@@ -1,9 +1,6 @@
 package api_translate_text;
 
-/**
- *
- * @author Dũng Sobin
- */
+
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;

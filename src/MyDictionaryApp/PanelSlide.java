@@ -7,10 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 import javax.swing.Timer;
 
-/**
- *
- * @author Dũng Sobin
- */
+
 public class PanelSlide extends javax.swing.JPanel {
 
     public PanelSlide() {

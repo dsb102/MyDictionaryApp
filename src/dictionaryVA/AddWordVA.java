@@ -7,10 +7,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author Dũng Sobin
- */
+
 public class AddWordVA extends javax.swing.JFrame {
     
     public AddWordVA() {

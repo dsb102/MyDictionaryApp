@@ -1,10 +1,6 @@
 package dictionary_organization;
 
 
-/**
- *
- * @author Dũng Sobin
- */
 public class EntityWord {
     private String word;
     private String phonetic;

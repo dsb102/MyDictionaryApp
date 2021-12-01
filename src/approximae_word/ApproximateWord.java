@@ -1,9 +1,5 @@
 package approximae_word;
 
-/**
- *
- * @author Dũng Sobin
- */
 
 /*
 Tư tưởng:

@@ -4,10 +4,7 @@ package handle.filejson;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- *
- * @author Dũng Sobin
- */
+
 public class APIResponse {
     private String word = "";
     private String phonetic = "";

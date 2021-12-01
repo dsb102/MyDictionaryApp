@@ -6,10 +6,7 @@ import java.awt.Toolkit;
 import javax.swing.JOptionPane;
 import sqlserver.dung.ConnectToSQL;
 
-/**
- *
- * @author Dũng Sobin
- */
+
 public class AddWordFrame extends javax.swing.JFrame {
 
     public AddWordFrame() {

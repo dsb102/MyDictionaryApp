@@ -3,10 +3,7 @@ package handle.filejson;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- *
- * @author Dũng Sobin
- */ 
+
 public class Definitions {
     private String definition = "";
     private String example = "";

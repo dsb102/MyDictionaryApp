@@ -5,10 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.util.*;
 
-/**
- *
- * @author Dũng Sobin
- */
+
 
 public class Dictionary {
     public Map<String, String> Dic = new HashMap<>();
