@@ -11,6 +11,7 @@
 ## Libraries
 	JavaSwing
 	JSON
+	JDBC
 	...
 ## Features
 	Oxford Dictionary
