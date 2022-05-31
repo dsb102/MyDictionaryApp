@@ -24,8 +24,8 @@
 	Make Note Word
  ## About words database
  	This file txt database Vietnamese-English contains over 24.000 words.
-	This databse contains over 109,000 words.
-	The raw format is TXT, and I have to convert it to SQL server databse by processing JAVA files
+	This database contains over 109,000 words.
+	The raw format is TXT, and I have to convert it to SQL server database by processing JAVA files
 	You can download the raw TXT file here: http://www.informatik.uni-leipzig.de/~duc/Dict/
 	The application source code you can find in my repo.
 	
